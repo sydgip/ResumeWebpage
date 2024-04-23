@@ -1,0 +1,77 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Default font family */
+}
+
+/* Styling header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center; /* Center align header content */
+}
+
+/* Styling main content */
+section {
+    margin-bottom: 40px; /* Increase spacing between sections */
+    padding: 20px;
+}
+
+/* Styling section headings */
+h2 {
+    margin-bottom: 20px; /* Increase spacing between section headings */
+    color: #333; /* Darken section headings for better contrast */
+}
+
+/* Styling project cards */
+.three-col {
+    display: flex;
+ 
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.card {
+    width: calc(33.33% - 20px); /* Adjust width to fit three columns with margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* Styling links */
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styling footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive design */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for smaller screens */
+    header {
+        padding: 15px;
+    }
+    section {
+        padding: 15px;
+    }
+    .card {
+        width: calc(50% - 20px); /* Adjust width for smaller screens */
+    }
+    footer {
+        padding: 15px;
+    }
+}
